@@ -2,37 +2,917 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    scroll-behavior: smooth;
+
+    /*========== Colors ==========*/
+    /*Color mode hSL (Hue, Saturation, Lightness) */
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: rgb(0, 0, 0);/*rgb(12, 12, 12);*/
+    overflow-x: hidden;
+    color: white;
+    overflow-y: hidden;
+}
+
+.app_Main{
+  display: flex;
+  flex-direction: row;
+}
+
+.main_Column {
+  display: flex;
+  flex-direction: column;
+}
+
+header
+{
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    padding: 1px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header ul
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;   
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(251, 252, 251);
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+header ul li a:hover, header ul li a.active {
+    background: hsl(0, 2%, 10%);
+    border-color: rgb(230, 139, 1);
+    color: rgb(255, 255, 255);
+}
+
+.me_data{
+  background-color: hsl(0, 2%, 10%); /*hsl(348, 27%, 78%)*/
+  
+  border-top: 1px solid rgba(28, 214, 239, 0.836);
+  border-bottom: 1px solid rgba(28, 214, 239, 0.836);
+  width: 300px;
+  height: 750px;
+  margin-top: 2%;
+  margin-left: 65px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.me_data img {
+  border-radius: 20%; 
+  width: 200px;
+  margin-top: 50px;
+}
+
+.me_data h1{
+  font-size: 1.5em;
+  color: #fbf8f7;   
+}
+.me_data h2{
+  font-size: 1.70em;
+  color: #f5f6f8;
+}
+
+.social-bar{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.clip {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.svg--source {
+  display: none
+}
+
+.svg--icon {
+  width: 100%;
+  max-width: 3rem;
+  height: 100%;
+  max-height: 3rem;
+  display: block;
+  padding: 1%;
+  margin: 0 auto;
+  fill: currentColor
+}
+
+
+.social-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.share {
+  width: 3rem;
+  height: 3rem;
+  float: left;
+  margin: .5rem 1rem .5rem 0;
+  color: #353c4a;
+  border: .125rem solid #f3f3f3;
+  box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+  border-radius: 50%;
+  transition: 250ms;
+  
+  &:last-child {
+      margin-right: 0
+  }
+  
+  &:hover,
+  &:focus {
+      background: #f1f1f1;
+  }
+  
+  &:focus {
+      outline-color: inherit;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.github {
+  &:hover,
+  &:focus {
+      color: #119e3e;
+      box-shadow: 0 0 24px 0 #119e3e
+  }
+}
+
+.linkedin {
+  &:hover,
+  &:focus {
+      color: #0025f2;
+      box-shadow: 0 0 24px 0 #0025f2
+  }
+}
+
+.linkedIn-icon {
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+.info_scroll{
+  background-color: #000000;
+  border-radius: 2rem;
+  height: 700px;
+  width: 1250px;
+  margin-top: 100px;
+  margin-left: 50px;
+  overflow: scroll;
+}
+
+.info_scroll::-webkit-scrollbar{
+  display: none;
+}
+
+
+/*------------ About ------------*/
+#about{
+  padding: 50px 0;
+  background: hsl(0, 2%, 10%); 
+}
+.container{
+  padding: 10px 10%;
+  display: flex;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.bio{
+  flex-basis: 100%;
+}
+.bio h2{
+  font-size: 2em;
+  margin-bottom: 10px;
+  color:whitesmoke;
+}
+.bio p{
+  font-size: 1.2em;
+  color: whitesmoke;
+}
+
+
+.tab-titles{
+  display: flex;
+  margin: 20px 0 30px;
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgba(28, 214, 239, 0.836);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after{
+  width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+  color: #f5f6f8;
+  font-size: 14px;
+}
+.tab-contents ul li span {
+  color: rgba(251, 36, 93, 0.836);
+  font-size: 18px;
+}
+
+.tab-contents ul li a {
+  color: #f2fcf9;
+}
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+
+.projects {
+  padding: 30px 0;
+  background: hsl(0, 2%, 10%);
+}
+
+.projects > .project-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.projects h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-left: 110px;
+  color:whitesmoke;
+}
+
+/*========= Card FLEX =========== */
+.wrapper_Project{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_Project{
+  height: 350px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+.card_Project{
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+.card_Project > .card_Row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card_Project > .card_Row > .card_Icon {
+  background: rgb(0, 0, 0);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card_Project > .card_Row > .card_Info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 50px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.card_Project > .card_Row > .card_Info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.8; /* 50% opacity */
+  z-index: -1; /* Place behind the content */
+}
+
+.card_Info h4 {
+  margin-left: 20px;
+  text-transform: uppercase;
+  text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.card_Project > .card_tab {
+  background: #36020f;
+  height: 100px;
+  width: 500px;
+  
+}
+
+
+input:checked + label {
+  width: 600px;
+}
+input:checked +label .card_Info{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.card__button{
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.card__button:hover{
+  text-decoration: underline;
+}
+
+.card_Project[for="c1"]{
+  background-image: url('./images/background/pic8.jpg');
+}
+.card_Project[for="c2"]{
+  background-image: url('./images/background/pic9.jpg');
+}
+.card_Project[for="c3"]{
+  background-image: url('./images/background/data2.jpg');
+}
+.card_Project[for="c4"]{
+  background-image: url('./images/background/pic10.jpg');
+}
+.card_Project[for="c5"]{
+  background-image: url('./images/background/pic7.jpg');
+}
+
+.tab-projects {
+  padding-bottom: 3%;
+}
+
+/*===================BUild A CAR ============================*/
+
+#project1 {
+  background-color: rgb(12, 12, 12);
+  color: rgb(239, 234, 234);
+  border-left: 1px solid rgb(172, 59, 178);
+  border-top: 1px solid rgb(10, 193, 244);
+  border-right: 1px solid  rgb(172, 59, 178);
+}
+
+.project-title{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex; /* Ensures columns within each row are aligned */
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.project-title h1 {
+  margin: 0; /* Remove default margins from h1 */
+}
+
+#gallery-container-Car {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  max-height: 500px;
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+#gallery-Car {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100% - 70px);
+  height: calc(100% - 50px);
+  background-color: rgb(12, 12, 12);
+  outline-offset: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* firefox scrollbar */
+  scrollbar-width: 6px;
+  scrollbar-color: blue;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 0 0 55px;
+  scroll-behavior: smooth;
+/* firefox scrollbar */
+  scrollbar-color: rgb(10, 193, 244) #222;
+  scrollbar-width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#gallery-Car::-webkit-scrollbar {
+  height: 25px;
+}
+
+#gallery-Car::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#gallery-Car::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+#gallery-Car::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#gallery-Car::-webkit-scrollbar-thumb:active {
+  background: #444;
+}
+
+#gallery-Car::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  height: 25px;
+  width: 80px;
+  background-color: rgb(248, 22, 169);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z'/%3E%3Cpath fill-rule='evenodd' d='M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z'/%3E%3C/svg%3E");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gallery-Car::-webkit-scrollbar-button:single-button:horizontal:increment {
+  height: 25px;
+  width: 80px;
+  background-color: rgb(248, 22, 169);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z'/%3E%3Cpath fill-rule='evenodd' d='M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z'/%3E%3C/svg%3E");
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#gallery-Car::-webkit-scrollbar-button:single-button:horizontal:decrement:hover,
+#gallery-Car::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+  background-color: rgb(248, 22, 169);
+}
+
+#gallery-Car::-webkit-scrollbar-button:single-button:horizontal:decrement:active,
+#gallery-Car::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+  background-color: rgb(248, 22, 169);
+}
+
+
+
+
+#gallery-Car figure {
+  position: relative;
+  margin: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+  scroll-snap-align: start;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  padding-bottom: 20px;
+  
+}
+
+#gallery-Car figure:nth-child(1) {
+  margin-left: 60px;
+}
+#gallery-Car figure div {
+  position: absolute;
+  width: 1%;
+  height: 1%;
+  background: transparent;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#gallery-Car figure div:nth-child(3) {
+  top: 0px;
+  left: 0;
+  margin-bottom: 5px;
+  border-top: 5px solid rgb(249, 14, 151);
+  border-radius: 5px 0px 0px 0px;
+}  
+#gallery-Car figure div:nth-child(4) {
+  top: 0;
+  right: 0;
+  border-top: 5px solid rgb(249, 14, 151);
+  border-radius: 0px 5px 0px 0px;
+}  
+
+#gallery-Car figure img {
+  height: 100%;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+  filter: brightness(90%);
+  outline: 1px solid transparent;
+  outline-offset: -40px;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery-Car figure:hover div {
+  width: 50%;
+  height: 90%;
+  opacity: 4;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.project-description span {
+  color:rgb(10, 193, 244);
+}
+
+
+.project-description #car_figures {
+  color: #b912b0;
+}
+
+.project-description p {
+  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.project-content{
+  margin: 0% 8% 3% 8%;
+}
+
+/*==================== EL PASO DATABASE ============================*/
+
+#project2 {
+  background-color: rgb(12, 12, 12);
+  color: rgb(239, 234, 234);
+  border-left: 1px solid rgb(201, 113, 5);
+  border-top: 1px solid rgb(10, 193, 244);
+  border-right: 1px solid  rgb(201, 113, 5);
+  
+}
+
+.pr-Des2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pr-Des2 span{
+  color: rgb(201, 113, 5);
+}
+
+.project-description #sub-title {
+  color: rgb(10, 193, 244);
+}
+
+.description_2{
+  margin-bottom: 50px;
+}
+
+.pr-Des2 #gallery-title{
+  font-size: 30px;
+}
+
+.gallery-container-pr2 {
+  width: 90%;
+  max-height: 550px; /* Set the height for the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: rgb(12, 12, 12); /* Optional: Set a background color */
+  padding: 40px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  border: 1px dashed rgb(10, 193, 244);
+  display: flex;
+  justify-content: center;
+  /* Firefox scrollbar */
+  scrollbar-width: 6px;
+  scrollbar-color: blue;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 0;
+  scroll-behavior: smooth;
+  /* Firefox scrollbar */
+  scrollbar-color: rgb(10, 193, 244) #222;
+  scrollbar-width: auto;
+}
+
+.gallery-pr2 {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  gap: 25px; /* Space between images */
+}
+
+#gallery-pr2 figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-pr2 figure img {
+  max-width: 100%; /* Ensure images do not exceed container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+              rgba(0, 0, 0, 0.22) 0px 10px 10px; /* Optional: Add a shadow */
+  filter: brightness(80%);
+}
+
+.gallery-pr2 figcaption {
+  font-size: 1.2em; /* Change font size */
+  color: rgb(201, 113, 5); /* Change text color */
+  background-color: rgba(0, 0, 0, 0.8); /* Add background color with transparency */
+  padding: 10px; /* Add padding around the text */
+  border-radius: 8px; /* Round the corners */
+  margin-top: 10px; /* Space above the caption */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-family: 'Arial', sans-serif; /* Change font family */
+  width: auto;
+  text-align: center;
+}
+
+/*==================== UTEP PRACTICUM ===================== */
+
+#project3 {
+  background-color: rgb(12, 12, 12);
+  color: rgb(239, 234, 234);
+  border-left: 1px solid rgb(8, 193, 210);
+  border-top: 1px solid rgb(201, 113, 5);
+  border-right: 1px solid  rgb(8, 193, 210);
+}
+
+.pr-Des3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pr-Des3 span{
+  color: rgb(8, 193, 210);
+}
+
+.pr-Des3 #sub-title-pr3 {
+  color: rgb(201, 113, 5);
+}
+
+.description_2{
+  margin-bottom: 50px;
+}
+
+.pr-Des3 #gallery-title{
+  color: rgb(8, 193, 210);
+  font-size: 30px;
+}
+
+.gallery-container-pr3 {
+  width: 90%;
+  max-height: 550px; /* Set the height for the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: rgb(12, 12, 12); /* Optional: Set a background color */
+  padding: 40px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  border: 1px dashed rgb(201, 113, 5);
+  display: flex;
+  justify-content: center;
+  /* Firefox scrollbar */
+  scrollbar-width: 6px;
+  scrollbar-color: blue;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 0;
+  scroll-behavior: smooth;
+  /* Firefox scrollbar */
+  scrollbar-color: rgb(10, 193, 244) #222;
+  scrollbar-width: auto;
+}
+
+.gallery-pr3 {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  gap: 25px; /* Space between images */
+}
+
+#gallery-pr3 figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-pr3 figure img {
+  max-width: 100%; /* Ensure images do not exceed container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+              rgba(0, 0, 0, 0.22) 0px 10px 10px; /* Optional: Add a shadow */
+  filter: brightness(80%);
+}
+
+.gallery-pr3 figcaption {
+  font-size: 1.2em; /* Change font size */
+  color: rgb(201, 113, 5); /* Change text color */
+  background-color: rgba(0, 0, 0, 0.8); /* Add background color with transparency */
+  padding: 10px; /* Add padding around the text */
+  border-radius: 8px; /* Round the corners */
+  margin-top: 10px; /* Space above the caption */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-family: 'Arial', sans-serif; /* Change font family */
+  width: auto;
+  text-align: center;
+}
+
+/*=================== PayDirt Pete =========================*/
+
+#project4 {
+  background-color: rgb(12, 12, 12);
+  color: rgb(239, 234, 234);
+  border-left: 1px solid rgb(3, 90, 49);
+  border-top: 1px solid rgb(201, 113, 5);
+  border-right: 1px solid  rgb(3, 90, 49);
+}
+
+.pr-Des4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pr-Des4 span{
+  color: rgb(44, 157, 167);
+}
+
+.pr-Des4 #sub-title-pr4 {
+  color: rgb(2, 132, 71);
+}
+
+.description_2{
+  margin-bottom: 50px;
+}
+
+.pr-Des4 #gallery-title{
+  color: rgb(227, 179, 68);
+  font-size: 30px;
+}
+
+.gallery-container-pr4 {
+  width: 90%;
+  max-height: 550px; /* Set the height for the scrollable container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: rgb(12, 12, 12); /* Optional: Set a background color */
+  padding: 40px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  border: 1px dashed rgb(201, 113, 5);
+  display: flex;
+  justify-content: center;
+  /* Firefox scrollbar */
+  scrollbar-width: 6px;
+  scrollbar-color: blue;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 0;
+  scroll-behavior: smooth;
+  /* Firefox scrollbar */
+  scrollbar-color: rgb(10, 193, 244) #222;
+  scrollbar-width: auto;
+}
+
+.gallery-pr4 {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  gap: 25px; /* Space between images */
+}
+
+#gallery-pr4 figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery-pr4 figure img {
+  max-width: 100%; /* Ensure images do not exceed container's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+              rgba(0, 0, 0, 0.22) 0px 10px 10px; /* Optional: Add a shadow */
+  filter: brightness(80%);
+}
+
+.gallery-pr4 figcaption {
+  font-size: 1.2em; /* Change font size */
+  color: rgb(201, 113, 5); /* Change text color */
+  background-color: rgba(0, 0, 0, 0.8); /* Add background color with transparency */
+  padding: 10px; /* Add padding around the text */
+  border-radius: 8px; /* Round the corners */
+  margin-top: 10px; /* Space above the caption */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-family: 'Arial', sans-serif; /* Change font family */
+  width: auto;
+  text-align: center;
+}
+
+.contact-me {
+  padding: 50px 0;
+  background: hsl(0, 2%, 10%);
+  margin: auto;
+  padding: 10px 10%;
+
+}
+
+.contact-me h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color:whitesmoke;
 }

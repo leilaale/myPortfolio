@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Hi There!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Leila! Welcome to my Portfolio Repository!
 
-## Available Scripts
+I had done my portfolio first with only HTML, CSS, and some Javascript. I then realized that many jobs require React, Angular, or Vue 
+experience as a front-end framework. I have never work with any of them in any previous project other the Flask.
 
-In the project directory, you can run:
+I embarked in the Journey of learning React first and to make it a bit easier on myself I decided to
+redo my Portfolio using React.
 
-### `npm start`
+This allowed me to not worry much of the design since I already had it, and focus more on how React works.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+PROBLEMS I CAME ABOUT
+    - Since I had previously used some Javascript for some functionality in my portfolio. I had to modify this to make the React components
+    work the same. So I learned more of Node.js and React.js
+    - I learned to be more careful about CSS styling. I had problems with my input in my contact me section due to previously making css styling for the input in my projects sections. I had made input { display: none}, which made all inputs not appear. I had to find a way to modify this. In this process, I practiced debugging until I found the source of the problem. Then I had to research how to prevent it and apply it to my code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+NEW FEATURES (that were nOt in the previous portfolio):
+    - I made a contact me section using EmailJS, this allows for people to send me an email directly to my own email. 
+    - New colors. I modified the colors I had, decided I could go for another look since I had gotten a bit bored of the previous one
+    - I used .env variables to make secure my API keys for EmailJS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Thank you for checking it out! 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Have an awesome day! 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Best Wishes,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Leila
