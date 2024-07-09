@@ -5,9 +5,14 @@ import SideInfo from './side_info';
 import AboutMe from './about';
 import Projects from './projects';
 import ContactMe from './contactMe';
+import { useEffect } from 'react';
+
 
 function App() {
 
+  useEffect(() => {
+    document.title = "Leila Martinez";
+  }, []);
 
   return (
     <div className = "app_Main">

@@ -13,9 +13,12 @@ const SideInfo = () => {
             </div>
             <div>
                     <h1 className ="my_contact_info">Contact Information</h1>
-                    <p>Email:<br />leilaalemtz.11@gmail.com<br /><br />Phone:<br />(915)471-8850</p>
+                    <p>Email:<br />leilaalemtz.11@gmail.com<br /><br />Phone:<br />(915)471-8850 <br /> <br /></p>
             </div>
             <SocialBar></SocialBar>
+            <div>
+                <p>Please contact me by: <br/> Email or LinkedIn</p>
+            </div>
         </div>
     );
 
