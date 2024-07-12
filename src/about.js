@@ -20,10 +20,12 @@ const AboutMe = () => {
                 <div className="bio">
                 <h2>About Me</h2>
                 <p>
-                    Currently a Master's student for Software Engineering at UTEP
+                    I am a recent Graduate for a Master's in Software Engineering at UTEP
                     (University of Texas at El Paso). Started my journey in Jan.
-                    2022 with pre-requisites for the master's and have maintained
-                    motivated and excited for this career.
+                    2022 with pre-requisites for the master's, started my Masters in Jan. 2023 and finally graduated in May 2024!
+                    <br/><br />
+                    I have loved this journey, and I am excited for the next chapter where I use my acquired skills for software development. 
+                
                 </p>
                 <div className="tab-titles">
                     <p
