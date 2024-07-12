@@ -22,7 +22,7 @@ const AboutMe = () => {
                 <p>
                     I am a recent Graduate for a Master's in Software Engineering at UTEP
                     (University of Texas at El Paso). Started my journey in Jan.
-                    2022 with pre-requisites for the master's, started my Masters in Jan. 2023 and finally graduated in May 2024!
+                    2022 with pre-requisites for the degree, then started my Masters in Jan. 2023 and finally graduated in May 2024!
                     <br/><br />
                     I have loved this journey, and I am excited for the next chapter where I use my acquired skills for software development. 
                 
