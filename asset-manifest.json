@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.fd890fae.css",
-    "main.js": "/myPortfolio/static/js/main.560145ab.js",
+    "main.css": "/myPortfolio/static/css/main.150eb1f4.css",
+    "main.js": "/myPortfolio/static/js/main.d7968914.js",
     "static/js/453.2cd7cba6.chunk.js": "/myPortfolio/static/js/453.2cd7cba6.chunk.js",
     "static/media/peteGame.mp4": "/myPortfolio/static/media/peteGame.307aaf7e132ad18070d4.mp4",
     "static/media/ep_login.png": "/myPortfolio/static/media/ep_login.06d472dc2683412de2a5.png",
@@ -40,10 +40,12 @@
     "static/media/p_logIn.png": "/myPortfolio/static/media/p_logIn.11791a0a855d81fdc6a5.png",
     "static/media/p_proposalUpload.png": "/myPortfolio/static/media/p_proposalUpload.4886cd2b7a50f198308f.png",
     "static/media/ep_tableOwners.png": "/myPortfolio/static/media/ep_tableOwners.a2f1c8f88d0e463781fb.png",
+    "static/media/Code for Transcription.png": "/myPortfolio/static/media/Code for Transcription.e0c2f344a20d09a55827.png",
     "static/media/p_proposalUpload2.png": "/myPortfolio/static/media/p_proposalUpload2.f810c59b0a3897297c76.png",
     "static/media/ep_tableActive.png": "/myPortfolio/static/media/ep_tableActive.d0c92571e6a2cbb5c3ea.png",
     "static/media/p_search.png": "/myPortfolio/static/media/p_search.1aa4381ee2ca623b708f.png",
     "static/media/results_phone.png": "/myPortfolio/static/media/results_phone.fb631afc71c30e3a8c87.png",
+    "static/media/s3.png": "/myPortfolio/static/media/s3.2a4fd095472b62792cb1.png",
     "static/media/build_sportResults.png": "/myPortfolio/static/media/build_sportResults.d1ff18f9234129a83671.png",
     "static/media/ep_Menu2.png": "/myPortfolio/static/media/ep_Menu2.50317c62593a524f5b6f.png",
     "static/media/loginPage.png": "/myPortfolio/static/media/loginPage.d062889768405d64650b.png",
@@ -51,14 +53,17 @@
     "static/media/ep_businessAct.png": "/myPortfolio/static/media/ep_businessAct.4e7ec4cd781857524fe9.png",
     "static/media/ep_businessExpensive.png": "/myPortfolio/static/media/ep_businessExpensive.3cf7d95d8899fb59facd.png",
     "static/media/ep_businessRisk.png": "/myPortfolio/static/media/ep_businessRisk.1a4e3ff1120b25803160.png",
+    "static/media/s2Code.png": "/myPortfolio/static/media/s2Code.923d154baa59c89cc54b.png",
     "static/media/loggedInPage.png": "/myPortfolio/static/media/loggedInPage.443d85e7633bf781a435.png",
     "static/media/ep_businessType.png": "/myPortfolio/static/media/ep_businessType.d4caf09b735d7539573f.png",
     "static/media/ep_tableLicense.png": "/myPortfolio/static/media/ep_tableLicense.5969c2c6cce958b08bbd.png",
+    "static/media/s2.png": "/myPortfolio/static/media/s2.a497a08c47f8ffdfddfd.png",
     "static/media/ep_tableBusiness.png": "/myPortfolio/static/media/ep_tableBusiness.3c5834821ec878e67d10.png",
     "static/media/ep_tableActivity.png": "/myPortfolio/static/media/ep_tableActivity.c99369806e13a45b5941.png",
     "static/media/ep_tableLocation.png": "/myPortfolio/static/media/ep_tableLocation.201f602bec51ef821fae.png",
     "static/media/ep_tableBusOwners.png": "/myPortfolio/static/media/ep_tableBusOwners.2aaeb11dd81c4d2f9e0b.png",
     "static/media/ep_tableEmployee.png": "/myPortfolio/static/media/ep_tableEmployee.e8334bab3177b613049e.png",
+    "static/media/s1.png": "/myPortfolio/static/media/s1.5649243147992fed452f.png",
     "static/media/ep_tableAgent.png": "/myPortfolio/static/media/ep_tableAgent.2803c34024ad391342bf.png",
     "static/media/ep_editRecords.png": "/myPortfolio/static/media/ep_editRecords.dda38d83304f207decfd.png",
     "static/media/ep_paymentPosition.png": "/myPortfolio/static/media/ep_paymentPosition.28174b4be0a78c53ff5d.png",
@@ -66,12 +71,12 @@
     "static/media/ep_businessLocations.png": "/myPortfolio/static/media/ep_businessLocations.806b334dcc1d748647f0.png",
     "static/media/logo.svg": "/myPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/myPortfolio/index.html",
-    "main.fd890fae.css.map": "/myPortfolio/static/css/main.fd890fae.css.map",
-    "main.560145ab.js.map": "/myPortfolio/static/js/main.560145ab.js.map",
+    "main.150eb1f4.css.map": "/myPortfolio/static/css/main.150eb1f4.css.map",
+    "main.d7968914.js.map": "/myPortfolio/static/js/main.d7968914.js.map",
     "453.2cd7cba6.chunk.js.map": "/myPortfolio/static/js/453.2cd7cba6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd890fae.css",
-    "static/js/main.560145ab.js"
+    "static/css/main.150eb1f4.css",
+    "static/js/main.d7968914.js"
   ]
 }
