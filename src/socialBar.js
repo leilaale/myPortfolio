@@ -27,7 +27,7 @@ const SocialBar = () => {
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/leila-ale-mtz/" class="share linkedin">
-                                <svg role="presentation" class="svg--icon linkedIn-icon">
+                                <svg role="presentation" className="svg--icon linkedIn-icon">
                                     <use href="#svg--linkedIn" />
                                     <span className="clip">LinkedIn</span>
                                 </svg>

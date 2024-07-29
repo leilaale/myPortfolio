@@ -8,10 +8,10 @@ const SkillsTab = () => {
                 <li><span>MySQL</span> (1 year)</li>
                 <li><span>Html & CSS</span> (1 year)</li>
                 <li><span>UX Design</span> (1.5 years)</li>
-                <li><span>Flask</span> (this past semester)</li>
-                <li><span>MongoDB</span> (this past semester)</li>
-                <li><span>OpenAI</span> (this past semester)</li>
-                <li><span>Docker</span> (this past semester)</li>
+                <li><span>Flask</span> 1 project</li>
+                <li><span>MongoDB</span> 1 project</li>
+                <li><span>OpenAI</span> 1 project</li>
+                <li><span>Docker</span> 2 projects</li>
                 <li><span>Kotlin (Basics)</span></li>
             </ul>
         
