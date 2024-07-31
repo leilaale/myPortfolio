@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from './images/Me/me1.png';
+import avatar from './images/Me/meFirst.png';
 import SocialBar from './socialBar';
 
 const SideInfo = () => {

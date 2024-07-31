@@ -96,6 +96,7 @@ header ul li a:hover, header ul li a.active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 25px;
 }
@@ -916,3 +917,19 @@ input:checked +label .card_Info{
   margin-bottom: 10px;
   color:whitesmoke;
 }
+
+
+.accordion {
+  margin: 1em 0;
+}
+
+.accordion h2 {
+  background-color: rgb(2, 7, 7);
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+

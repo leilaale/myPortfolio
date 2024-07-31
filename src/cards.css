@@ -20,17 +20,30 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .projectCard_description {
     background-color: rgb(2, 7, 7);
-    font-family: "Zilla Slab", serif;
-    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center !important;
     justify-content: center;
 }
 
 .projectCard_description p {
     font-size: 1rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.projectCard_description a {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3dvh;
+    margin-bottom: 4dvh;
 }
 
 .projectCard_span {
@@ -47,13 +60,16 @@
     margin-bottom: 2dvh;
 }
 
+.git_link {
+    color: rgb(247, 250, 244);
+}
+
 .hashtags {
     color: rgb(254, 158, 56);
 }
 
 .projectCard_gallery {
     font-size: medium;
-    font-family: "Zilla Slab", serif;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -116,9 +132,8 @@
     transform: translateY(-50%);
     font-size: 2rem;
     cursor: pointer;
-    color: #0df3fb;
+    color: #f68f09;
     z-index: 1;
-    border: 2px solid aqua; /* Border color and width */
     border-radius: 50%; /* Makes the border round */
 }
 
