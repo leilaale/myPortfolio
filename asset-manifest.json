@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.150eb1f4.css",
-    "main.js": "/myPortfolio/static/js/main.d7968914.js",
+    "main.css": "/myPortfolio/static/css/main.492208ac.css",
+    "main.js": "/myPortfolio/static/js/main.05839cea.js",
     "static/js/453.2cd7cba6.chunk.js": "/myPortfolio/static/js/453.2cd7cba6.chunk.js",
     "static/media/peteGame.mp4": "/myPortfolio/static/media/peteGame.307aaf7e132ad18070d4.mp4",
     "static/media/ep_login.png": "/myPortfolio/static/media/ep_login.06d472dc2683412de2a5.png",
     "static/media/ep_mainPage.png": "/myPortfolio/static/media/ep_mainPage.5e4bea9a634c683d7db1.png",
-    "static/media/me1.png": "/myPortfolio/static/media/me1.33a296fbe5ea68aa5624.png",
     "static/media/results_map.png": "/myPortfolio/static/media/results_map.6555095ec188f48d3fa5.png",
     "static/media/favorites_List.png": "/myPortfolio/static/media/favorites_List.58d74e3ae01a540c7989.png",
     "static/media/favoritesPage_delete.png": "/myPortfolio/static/media/favoritesPage_delete.12a59495789d84f95a5a.png",
+    "static/media/meFirst.png": "/myPortfolio/static/media/meFirst.4a66de757348cc7cb48b.png",
     "static/media/pic7.jpg": "/myPortfolio/static/media/pic7.a89b7927181525b6771f.jpg",
     "static/media/pic8.jpg": "/myPortfolio/static/media/pic8.72841878674a981c1af1.jpg",
     "static/media/data2.jpg": "/myPortfolio/static/media/data2.11375b47b6be50fa582b.jpg",
@@ -48,12 +48,13 @@
     "static/media/s3.png": "/myPortfolio/static/media/s3.2a4fd095472b62792cb1.png",
     "static/media/build_sportResults.png": "/myPortfolio/static/media/build_sportResults.d1ff18f9234129a83671.png",
     "static/media/ep_Menu2.png": "/myPortfolio/static/media/ep_Menu2.50317c62593a524f5b6f.png",
+    "static/media/weatherDenver_5days.png": "/myPortfolio/static/media/weatherDenver_5days.05c8da3f432ddf48edaa.png",
+    "static/media/weatherEP_5days.png": "/myPortfolio/static/media/weatherEP_5days.6c43ed4997ef042d93e4.png",
     "static/media/loginPage.png": "/myPortfolio/static/media/loginPage.d062889768405d64650b.png",
     "static/media/ep_businessOwners.png": "/myPortfolio/static/media/ep_businessOwners.4efdcfa16dfe045f9e32.png",
     "static/media/ep_businessAct.png": "/myPortfolio/static/media/ep_businessAct.4e7ec4cd781857524fe9.png",
     "static/media/ep_businessExpensive.png": "/myPortfolio/static/media/ep_businessExpensive.3cf7d95d8899fb59facd.png",
     "static/media/ep_businessRisk.png": "/myPortfolio/static/media/ep_businessRisk.1a4e3ff1120b25803160.png",
-    "static/media/s2Code.png": "/myPortfolio/static/media/s2Code.923d154baa59c89cc54b.png",
     "static/media/loggedInPage.png": "/myPortfolio/static/media/loggedInPage.443d85e7633bf781a435.png",
     "static/media/ep_businessType.png": "/myPortfolio/static/media/ep_businessType.d4caf09b735d7539573f.png",
     "static/media/ep_tableLicense.png": "/myPortfolio/static/media/ep_tableLicense.5969c2c6cce958b08bbd.png",
@@ -63,6 +64,8 @@
     "static/media/ep_tableLocation.png": "/myPortfolio/static/media/ep_tableLocation.201f602bec51ef821fae.png",
     "static/media/ep_tableBusOwners.png": "/myPortfolio/static/media/ep_tableBusOwners.2aaeb11dd81c4d2f9e0b.png",
     "static/media/ep_tableEmployee.png": "/myPortfolio/static/media/ep_tableEmployee.e8334bab3177b613049e.png",
+    "static/media/weatherEP_today.png": "/myPortfolio/static/media/weatherEP_today.3354c6f7e10e4611baa8.png",
+    "static/media/weatherDenver_today.png": "/myPortfolio/static/media/weatherDenver_today.d213758b9aacba13aca9.png",
     "static/media/s1.png": "/myPortfolio/static/media/s1.5649243147992fed452f.png",
     "static/media/ep_tableAgent.png": "/myPortfolio/static/media/ep_tableAgent.2803c34024ad391342bf.png",
     "static/media/ep_editRecords.png": "/myPortfolio/static/media/ep_editRecords.dda38d83304f207decfd.png",
@@ -71,12 +74,12 @@
     "static/media/ep_businessLocations.png": "/myPortfolio/static/media/ep_businessLocations.806b334dcc1d748647f0.png",
     "static/media/logo.svg": "/myPortfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/myPortfolio/index.html",
-    "main.150eb1f4.css.map": "/myPortfolio/static/css/main.150eb1f4.css.map",
-    "main.d7968914.js.map": "/myPortfolio/static/js/main.d7968914.js.map",
+    "main.492208ac.css.map": "/myPortfolio/static/css/main.492208ac.css.map",
+    "main.05839cea.js.map": "/myPortfolio/static/js/main.05839cea.js.map",
     "453.2cd7cba6.chunk.js.map": "/myPortfolio/static/js/453.2cd7cba6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.150eb1f4.css",
-    "static/js/main.d7968914.js"
+    "static/css/main.492208ac.css",
+    "static/js/main.05839cea.js"
   ]
 }
