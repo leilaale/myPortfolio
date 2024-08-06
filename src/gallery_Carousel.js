@@ -23,7 +23,13 @@ const Carousel = ({ slides }) => {
                 >
                     {index === currentSlide && (
                         <div className='carousel_column'>
-                            <img src={slide.image} alt={slide.title} className="carousel_image" />
+                            {slide.type === 'image' ? (
+                                <img src={slide.source} alt={slide.title} className="carousel_image" />
+                            ) : (
+                                <video src={slide.source} controls className="carousel_video">
+                                    Your browser does not support the video tag.
+                                </video>
+                            )}
                             <div className='carousel_imageInfo'>
                                 <p className='image_description'>{slide.description}</p>
                             </div>

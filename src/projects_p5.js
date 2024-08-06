@@ -9,7 +9,19 @@ import awsImg5 from "./images/AWS/weatherChatBot/weatherEP_today.png";
 import awsImg6 from "./images/AWS/weatherChatBot/weatherEP_5days.png";
 import awsImg7 from "./images/AWS/weatherChatBot/weatherDenver_today.png";
 import awsImg8 from "./images/AWS/weatherChatBot/weatherDenver_5days.png";
-
+import flutter_bitcoin from "./images/Flutter/bitcoin_video.mp4";
+import flutter_bitcoin2 from "./images/Flutter/bitcoin_image1.jpg";
+import flutter_bitcoin3 from "./images/Flutter/bitcoin_image2.jpg";
+import flutter_quizApp_loading from "./images/Flutter/quizApp_loading.mp4";
+import flutter_quizApp_ansSelection from "./images/Flutter/quizApp_answerSelection.mp4";
+import flutter_quizApp_logIn from "./images/Flutter/quizApp_login.jpg";
+import flutter_quizApp_logInError from  "./images/Flutter/quizApp_loginError.jpg";
+import flutter_quizApp_questionSample1 from  "./images/Flutter/quizApp_questionSample.jpg";
+import flutter_quizApp_questionSample2 from "./images/Flutter/quizApp_qSample2.jpg";
+import flutter_quizApp_checkQuestions from "./images/Flutter/quizApp_checkquestions.jpg";
+import flutter_quizApp_results from "./images/Flutter/quizApp_results.jpg";
+import flutter_quizApp_review from "./images/Flutter/quizApp_review.jpg";
+import flutter_quizApp_numQuestions from "./images/Flutter/quizApp_numQuestions.jpg";
 
 const projectsData = [
     {
@@ -24,10 +36,10 @@ const projectsData = [
                 hashTags: "#AWS #AWSBedrock #StateMachines #AWSServices #AI #AIprompts #BackEnd",
                 gitLink:"https://github.com/leilaale/awsLearning/tree/master/statemachine",
                 slides:[
-                        { image: awsImg1, title: 'Slide 1', description: "#1a Transcribe an .mp4 using AWS Transcribe Service"},
-                        { image: awsImg2, title: 'Slide 2', description: "#1b ~Code~"},
-                        { image: awsImg3, title: 'Slide 3', description: "#2a Translate transcription using AWS Transcription Service"},
-                        { image: awsImg4, title: 'Slide 4', description: "#3a Added a Parallel State to translate and create a poem"}
+                        { type:'image', source: awsImg1, title: 'Slide 1', description: "#1a Transcribe an .mp4 using AWS Transcribe Service"},
+                        { type:'image', source: awsImg2, title: 'Slide 2', description: "#1b ~Code~"},
+                        { type:'image', source: awsImg3, title: 'Slide 3', description: "#2a Translate transcription using AWS Transcription Service"},
+                        { type:'image', source: awsImg4, title: 'Slide 4', description: "#3a Added a Parallel State to translate and create a poem"}
                         
                 ] 
             },
@@ -40,10 +52,10 @@ const projectsData = [
                 hashTags:"#AWS #AWSBedrock #S3Bucket #Claude #BedrockAgent #BackEnd #JSON #Javascript #YML #KnowledgeBase",
                 gitLink:"https://github.com/leilaale/awsLearning/tree/master/weatherChatbot",
                 slides:[
-                        { image: awsImg5, title: 'Slide 1', description: "1. Results for today's weather for El Paso, TX"},
-                        { image: awsImg6, title: 'Slide 2', description: "2. Results for a 5 days' forecast for El Paso, TX"},
-                        { image: awsImg7, title: 'Slide 3', description: "3. Results for today's weather for Denver, Colorado"},
-                        { image: awsImg8, title: 'Slide 4', description: "4. Results for a 5 days' forecast for Denver, colorado"}
+                        { type:'image', source: awsImg5, title: 'Slide 1', description: "1. Results for today's weather for El Paso, TX"},
+                        { type:'image', source: awsImg6, title: 'Slide 2', description: "2. Results for a 5 days' forecast for El Paso, TX"},
+                        { type:'image', source: awsImg7, title: 'Slide 3', description: "3. Results for today's weather for Denver, Colorado"},
+                        { type:'image', source: awsImg8, title: 'Slide 4', description: "4. Results for a 5 days' forecast for Denver, colorado"}
                 ]
             }
         // Add more projects here
@@ -52,7 +64,42 @@ const projectsData = [
     {
         subject: "Flutter",
         projects: [
-            
+            {
+                cardTitle:"Quiz App",
+                teamSize:1,
+                objective:"Use an HTTP Request for Authentication and Quiz questions and use different Widgets",
+                resources:"Web Service",
+                cardDescription:"Created a quiz app using different kinds of Flutter Widgets. App had to do the following: (1) User had to log in through their credentials that were compared by an HTTP request. (2) There would be an alert dialog if credentials couldn't be verified. (3) There had to be a loading widget for any wait times. (4) The user could select amount of questions in the quiz. (5) The questions will be sourced from a collection available at a specified URL. (6) Users can navigate to the previous and next questions. (7) User can end the quiz and see their results. (8) Users can review each question along with their answers.",
+                hashTags:"#Flutter #BackEnd #FrontEnd #Dart #HTTPRequest #Authentication",
+                gitLink:"https://github.com/leilaale/awsLearning/tree/master/weatherChatbot",
+                slides:[
+                        { type: 'image', source: flutter_quizApp_logIn, title: 'Slide 1', description: "1. Log In"},
+                        { type: 'image', source: flutter_quizApp_logInError, title: 'Slide 2', description: "2. Log In Error"},
+                        { type:'video', source: flutter_quizApp_loading, title: 'Slide 3', description: "3. Loading Indicator"},
+                        { type: 'image', source: flutter_quizApp_numQuestions, title: 'Slide 4', description: "4. Select how any questions on quiz"},
+                        { type: 'image', source: flutter_quizApp_questionSample1, title: 'Slide 5', description: "5. Question Sample 1"},
+                        { type: 'image', source: flutter_quizApp_questionSample2, title: 'Slide 6', description: "6. Question Sample 2"},
+                        { type: 'video', source: flutter_quizApp_ansSelection, title: 'Slide 7', description: "7. Answer Selection"},
+                        { type: 'image', source: flutter_quizApp_checkQuestions, title: 'Slide 8', description: "8. Check Questions on Quiz"},
+                        { type: 'image', source: flutter_quizApp_results, title: 'Slide 9', description: "9. See results"},
+                        { type: 'image', source: flutter_quizApp_review, title: 'Slide 10', description: "10. Review Questions with Answers"},
+                ]
+            },
+            {
+                cardTitle:"Bitcoin Value from Coinbase API",
+                teamSize:1,
+                objective:"Use an API to gather information",
+                resources:"Coinbase API",
+                cardDescription:"Created a simple page design that would show the current value of Bitcoin. Main goal was to know how to call an API and showcase that information in the app. ",
+                hashTags:"#Flutter #BackEnd #FrontEnd #Dart #Button",
+                gitLink:"Please check out project one",
+                slides:[
+                        { type:'video', source: flutter_bitcoin, title: 'Slide 1', description: "1. Video Demonstration"},
+                        { type: 'image', source: flutter_bitcoin2, title: 'Slide 2', description: "2. Sample"},
+                        { type: 'image', source: flutter_bitcoin3, title: 'Slide 3', description: "3. Sample"},
+                ]
+            }
+
         ]
     }
     // Add more subjects with projects here
@@ -62,8 +109,6 @@ const projectsData = [
 
 
 const Project5 = () => {
-
-
 
     return(
 
