@@ -1,0 +1,50 @@
+// images.js
+const imagesSrc = {
+    buildACar: {
+        mainFamilyCar: require('./images/build_a_car/maingPage_tab1.png'),
+        mainSportsCar: require('./images/build_a_car/mainPage_tab5.png'),
+        searchBar: require('./images/build_a_car/mainPage_searchBar.png'),
+        mainFavorite: require('./images/build_a_car/main_favorite.png'),
+        sideBar: require('./images/build_a_car/sideBar.png'),
+        logInPage: require('./images/build_a_car/loginPage.png'),
+        logInError: require('./images/build_a_car/loginPage_Error.png'),
+        logInError2: require('./images/build_a_car/loginPage_Errpr.png'),
+        loggedIn: require('./images/build_a_car/loggedInPage.png'),
+        suv: require('./images/build_a_car/build_SUV.png'),
+        familyCar: require('./images/build_a_car/build_familyCar.png'),
+        truck: require('./images/build_a_car/build_Truck.png'),
+        van: require('./images/build_a_car/build_van.png'),
+        sports: require('./images/build_a_car/build_sportOptions2.png'),
+        sportOptions: require('./images/build_a_car/build_sportsOptions3.png'),
+        sportResults: require('./images/build_a_car/build_sportResults.png'),
+        map: require('./images/build_a_car/results_map.png'),
+        favorites: require('./images/build_a_car/results_favorite.png'),
+        phone: require('./images/build_a_car/results_phone.png'),
+        list: require('./images/build_a_car/favorites_List.png'),
+        delete: require('./images/build_a_car/favoritesPage_delete.png'),
+    },
+    geoTrips: {
+        home: require('./images/GeoTrips/geotrips_home.jpg'),
+        home2: require('./images/GeoTrips/HomePage2.jpg'),
+        account: require('./images/GeoTrips/gt_Account.jpg'),
+        signIn: require('./images/GeoTrips/gt_signIn.jpg'),
+        signIn2: require('./images/GeoTrips/gt_signIn2.jpg'),
+        signUp: require('./images/GeoTrips/gt_signUp.jpg'),
+        logs: require('./images/GeoTrips/gt_logs.jpg'),
+    },
+    practicum: {
+        pr_LogIn: require('./images/practicum/p_logIn.png'),
+        pr_UploadPage: require('./images/practicum/p_proposalUpload.png'),
+        pr_UploadPage2: require('./images/practicum/p_proposalUpload2.png'),
+        pr_proposalAnalysis: require('./images/practicum/p_proposalAnalysis.png'),
+        pr_researchStrengths: require('./images/practicum/p_proposalStrengths3.png'),
+        pr_researchAreas: require('./images/practicum/p_researchAreas_Blurred.png'),
+        pr_proposalMetrics: require('./images/practicum/p_proposalMetrics.png'),
+        pr_proposalMetricsProfessors: require('./images/practicum/p_metricsProfessors.png'),
+        pr_SearchPage: require('./images/practicum/p_search.png'),
+        pr_SearchPage2: require('./images/practicum/p_search3.png'),
+        pr_SearchPage3: require('./images/practicum/p_search2.png'),
+    }
+};
+
+export default imagesSrc;

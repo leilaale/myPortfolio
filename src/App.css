@@ -32,6 +32,9 @@
 body
 {
     background: rgb(0, 0, 0);/*rgb(12, 12, 12);*/
+    background-image: url(images/background/nic-y-c-Ux4pd9SYrXU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
     overflow-x: hidden;
     color: white;
     overflow-y: hidden;
@@ -57,6 +60,9 @@ header
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    background-color: #040D12;
+    border-radius: 20px;
+    padding: 6px 15px;
 }
 header ul
 {
@@ -78,13 +84,15 @@ header ul li a
     font-size: 1.5em;
 }
 header ul li a:hover, header ul li a.active {
-    background: hsl(0, 2%, 10%);
     border-color: rgb(230, 139, 1);
-    color: rgb(255, 255, 255);
+    color: #DEF9C4;
+    border-right: 2px solid #DEF9C4;
+    border-left: 2px solid #DEF9C4;
+
 }
 
 .me_data{
-  background-color: hsl(0, 2%, 10%); /*hsl(348, 27%, 78%)*/
+  background-color: #040D12; /*hsl(348, 27%, 78%)  hsl(0, 2%, 10%)*/
   
   border-top: 1px solid rgba(28, 214, 239, 0.836);
   border-bottom: 1px solid rgba(28, 214, 239, 0.836);
@@ -176,7 +184,7 @@ header ul li a:hover, header ul li a.active {
   
   &:hover,
   &:focus {
-      background: #f1f1f1;
+      background: #000000;
   }
   
   &:focus {
@@ -196,7 +204,7 @@ header ul li a:hover, header ul li a.active {
 .linkedin {
   &:hover,
   &:focus {
-      color: #0025f2;
+      color: #047dff;
       box-shadow: 0 0 24px 0 #0025f2
   }
 }
@@ -207,7 +215,7 @@ header ul li a:hover, header ul li a.active {
 }
 
 .info_scroll{
-  background-color: #000000;
+  background-color: #040D12;
   border-radius: 2rem;
   height: 700px;
   width: 1250px;
@@ -223,8 +231,7 @@ header ul li a:hover, header ul li a.active {
 
 /*------------ About ------------*/
 #about{
-  padding: 50px 0;
-  background: hsl(0, 2%, 10%); 
+  padding: 50px 0; /* hsl(0, 2%, 10%)*/ 
 }
 .container{
   padding: 10px 10%;
@@ -298,7 +305,6 @@ header ul li a:hover, header ul li a.active {
 
 .projects {
   padding: 30px 0;
-  background: hsl(0, 2%, 10%);
 }
 
 .projects > .project-row {
@@ -420,7 +426,7 @@ input:checked +label .card_Info{
 }
 
 .card_Project[for="c1"]{
-  background-image: url('./images/background/pic8.jpg');
+  background-image: url('./images/build_a_car/buildACar_Back1.jpg');
 }
 .card_Project[for="c2"]{
   background-image: url('./images/background/pic9.jpg');
@@ -444,9 +450,9 @@ input:checked +label .card_Info{
 #project1 {
   background-color: rgb(12, 12, 12);
   color: rgb(239, 234, 234);
-  border-left: 1px solid rgb(172, 59, 178);
+  border-left: 1px solid rgb(9, 240, 129);
   border-top: 1px solid rgb(10, 193, 244);
-  border-right: 1px solid  rgb(172, 59, 178);
+  border-right: 1px solid  rgb(9, 240, 129);
 }
 
 .project-title{
@@ -494,7 +500,7 @@ input:checked +label .card_Info{
   scroll-padding: 0 0 0 55px;
   scroll-behavior: smooth;
 /* firefox scrollbar */
-  scrollbar-color: rgb(10, 193, 244) #222;
+  scrollbar-color: rgb(1, 86, 25) #222;
   scrollbar-width: auto;
 }
 
@@ -521,7 +527,7 @@ input:checked +label .card_Info{
 #gallery-Car::-webkit-scrollbar-button:single-button:horizontal:decrement {
   height: 25px;
   width: 80px;
-  background-color: rgb(248, 22, 169);
+  background-color: rgb(9, 247, 5);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z'/%3E%3Cpath fill-rule='evenodd' d='M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z'/%3E%3C/svg%3E");
   background-size: 20px;
   background-position: center;
@@ -531,7 +537,7 @@ input:checked +label .card_Info{
 #gallery-Car::-webkit-scrollbar-button:single-button:horizontal:increment {
   height: 25px;
   width: 80px;
-  background-color: rgb(248, 22, 169);
+  background-color: rgb(9, 247, 5);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-box-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z'/%3E%3Cpath fill-rule='evenodd' d='M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z'/%3E%3C/svg%3E");
   background-size: 20px;
   background-position: center;
@@ -540,12 +546,12 @@ input:checked +label .card_Info{
 
 #gallery-Car::-webkit-scrollbar-button:single-button:horizontal:decrement:hover,
 #gallery-Car::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
-  background-color: rgb(248, 22, 169);
+  background-color: rgb(9, 247, 5);
 }
 
 #gallery-Car::-webkit-scrollbar-button:single-button:horizontal:decrement:active,
 #gallery-Car::-webkit-scrollbar-button:single-button:horizontal:increment:active {
-  background-color: rgb(248, 22, 169);
+  background-color: rgb(9, 247, 5);
 }
 
 
@@ -581,13 +587,13 @@ input:checked +label .card_Info{
   top: 0px;
   left: 0;
   margin-bottom: 5px;
-  border-top: 5px solid rgb(249, 14, 151);
+  border-top: 5px solid rgb(9, 247, 5);
   border-radius: 5px 0px 0px 0px;
 }  
 #gallery-Car figure div:nth-child(4) {
   top: 0;
   right: 0;
-  border-top: 5px solid rgb(249, 14, 151);
+  border-top: 5px solid rgb(9, 247, 5);
   border-radius: 0px 5px 0px 0px;
 }  
 
@@ -630,6 +636,8 @@ input:checked +label .card_Info{
 .project-content{
   margin: 0% 8% 3% 8%;
 }
+
+
 
 /*==================== EL PASO DATABASE ============================*/
 
@@ -906,7 +914,6 @@ input:checked +label .card_Info{
 
 .contact-me {
   padding: 50px 0;
-  background: hsl(0, 2%, 10%);
   margin: auto;
   padding: 10px 10%;
 

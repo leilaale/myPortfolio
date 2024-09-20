@@ -53,8 +53,7 @@
 }
 
 .col-1 > .formInput{
-
-    background: rgb(12, 12, 12);
+    background: #c2dda9;
     height: 50px;
     width: 400px;
 }
@@ -65,7 +64,7 @@
 .col-2 > .formInput {
     height: 50px;
     width: 850px;
-    background: rgb(12, 12, 12);
+    background: #c2dda9;
 }
 
 .row3 {
@@ -75,23 +74,23 @@
 .col-3 > .formInput {
     height: 300px;
     width: 850px;
-    background: rgb(12, 12, 12);
+    background: #c2dda9;
 }
 
 .formInput {
     border-style: none;
-    color: aqua;
+    color: rgb(0, 0, 0);
     padding: 10px;
 }
 .formInput::placeholder {
-    color: #f8f2f2; 
+    color: #000000; 
     padding: 10px;
 }
 
 .submit-btn {
     width: 750px;
     height: 30px;
-    background-color: rgb(6, 124, 137);
+    background-color: #365E32;
     color: snow;
     border: rgb(15, 134, 31);
 }

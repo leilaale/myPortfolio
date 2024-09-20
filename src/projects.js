@@ -23,12 +23,12 @@ const Projects = () => {
                             <div className="card_Row">
                                 <div className="card_Icon">1</div>
                                 <div className="card_Info">
-                                    <h4>Build-A-Car</h4>
-                                    <p>Cross-Platform programming with Flutter</p>
+                                    <h4>GeoTrips</h4>
+                                    <p></p>
                                 </div>
                             </div>
                             <div className="card_tab">
-                                <h1 className="card_title">Build-A-Car</h1>
+                                <h1 className="card_title">GeoTrips</h1>
                             </div>
                         </label>
                         {/* Repeat similar structure for other input and label pairs */}

@@ -1,15 +1,5 @@
 import React from "react";
-import pr_LogIn from './images/practicum/p_logIn.png';
-import pr_UploadPage from './images/practicum/p_proposalUpload.png';
-import pr_UploadPage2 from './images/practicum/p_proposalUpload2.png';
-import pr_proposalAnalysis from './images/practicum/p_proposalAnalysis.png';
-import pr_researchStrengths from './images/practicum/p_proposalStrengths3.png';
-import pr_researchAreas from './images/practicum/p_researchAreas_Blurred.png';
-import pr_proposalMetrics from './images/practicum/p_proposalMetrics.png';
-import pr_proposalMetricsProfessors from './images/practicum/p_metricsProfessors.png';
-import pr_SearchPage from './images/practicum/p_search.png';
-import pr_SearchPage2 from './images/practicum/p_search3.png';
-import pr_SearchPage3 from './images/practicum/p_search2.png';
+import imagesSrc from "./imagesSrc";
 
 
 
@@ -57,47 +47,47 @@ const Project3 = () => {
                                 <div class="gallery-pr3">
                                     <figure>
                                         <figcaption>1. Log In Page</figcaption>
-                                        <img src={pr_LogIn} alt="Log In Page" />
+                                        <img src={imagesSrc.practicum.pr_LogIn} alt="Log In Page" />
                                     </figure>
                                     <figure>
                                         <figcaption>2. Upload Page</figcaption>
-                                        <img src={pr_UploadPage} alt="Upload Page 1"  />                                    
+                                        <img src={imagesSrc.practicum.pr_UploadPage} alt="Upload Page 1"  />                                    
                                     </figure>
                                     <figure>
                                         <figcaption>3. Upload Page 2</figcaption>
-                                        <img src={pr_UploadPage2} alt="Upload Page 2"  />
+                                        <img src={imagesSrc.practicum.pr_UploadPage2} alt="Upload Page 2"  />
                                     </figure>
                                     <figure>
                                         <figcaption>4. Proposal Analysis</figcaption>
-                                        <img src={pr_proposalAnalysis} alt="Proposal Analysis"  />
+                                        <img src={imagesSrc.practicum.pr_proposalAnalysis} alt="Proposal Analysis"  />
                                     </figure>
                                     <figure>
                                         <figcaption>5. Research Strengths</figcaption>
-                                        <img src={pr_researchStrengths} alt="Research Strengths"  />
+                                        <img src={imagesSrc.practicum.pr_researchStrengths} alt="Research Strengths"  />
                                     </figure>
                                     <figure>
                                         <figcaption>6. Research Areas</figcaption>
-                                        <img src={pr_researchAreas} alt="Research Areas"  />
+                                        <img src={imagesSrc.practicum.pr_researchAreas} alt="Research Areas"  />
                                     </figure>
                                     <figure>
                                         <figcaption>7. Proposal Metrics</figcaption>
-                                        <img src={pr_proposalMetrics} alt="Proposal Metrics"  />
+                                        <img src={imagesSrc.practicum.pr_proposalMetrics} alt="Proposal Metrics"  />
                                     </figure>
                                     <figure>
                                         <figcaption>8. Proposal Metrics - Shows ProfessorsPa</figcaption>
-                                        <img src={pr_proposalMetricsProfessors} alt="Proposal Metrics"  />
+                                        <img src={imagesSrc.practicum.pr_proposalMetricsProfessors} alt="Proposal Metrics"  />
                                     </figure>
                                     <figure>
                                         <figcaption>9. Search Page</figcaption>
-                                        <img src={pr_SearchPage} alt="Search Page"  />
+                                        <img src={imagesSrc.practicum.pr_SearchPage} alt="Search Page"  />
                                     </figure>
                                     <figure>
                                         <figcaption>10. Search Page 2 - How it Works</figcaption>
-                                        <img src={pr_SearchPage2} alt="Search Page"  />
+                                        <img src={imagesSrc.practicum.pr_SearchPage2} alt="Search Page"  />
                                     </figure>
                                     <figure>
                                         <figcaption>11. Search Page 3 - Results Sample</figcaption>
-                                        <img src={pr_SearchPage3} alt="Search Page"  />
+                                        <img src={imagesSrc.practicum.pr_SearchPage3} alt="Search Page"  />
                                     </figure>
                                 </div>
                             </div>

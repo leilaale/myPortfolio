@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./accordion";
+import imagesSrc from "./imagesSrc";
 
 import awsImg2 from "./images/AWS/statemachines/Code for Transcription.png";
 import awsImg1 from "./images/AWS/statemachines/s1.png";
@@ -22,6 +23,7 @@ import flutter_quizApp_checkQuestions from "./images/Flutter/quizApp_checkquesti
 import flutter_quizApp_results from "./images/Flutter/quizApp_results.jpg";
 import flutter_quizApp_review from "./images/Flutter/quizApp_review.jpg";
 import flutter_quizApp_numQuestions from "./images/Flutter/quizApp_numQuestions.jpg";
+
 
 const projectsData = [
     {
@@ -65,6 +67,33 @@ const projectsData = [
         subject: "Flutter",
         projects: [
             {
+                cardTitle:"Build-A-Car",
+                teamSize:2,
+                objective:"Create an app that integrates with a public API to gather and display real-time car data to users, providing an interactive and user-friendly interface.",
+                resources:"car API",
+                cardDescription:`
+                    <p>In this application, we developed a tool that recommends cars available in local dealerships.</p>
+                    <p>Users can customize their car preferences by selecting options such as <strong>Year</strong>, <strong>Make</strong>, <strong>Model</strong>, <strong>Number of Doors</strong>, <strong>Drive</strong>, and <strong>Fuel Type</strong>.</p>
+                    <p>The app then generates a list of recommended vehicles, ranked by how well they match the user's criteria.</p>
+                    <p>
+                    <span className: "description_bold">Car Customization:</span> Users can specify their preferred car options. <br>
+                    <span className: "description_bold">Recommendation Engine:</span> The app filters and displays cars based on user preferences.<br>
+                    <span className: "description_bold"><strong>Favorites List:</strong></span> Users can save their preferred cars for quick access.<br>
+                    <span className: "description_bold"><strong>Detailed View:</strong></span> Each car listing includes a map showing the dealership location, contact details, and additional car information.
+                    </p>
+                    <p>The app provides an intuitive and interactive experience, allowing users to efficiently find and explore their ideal vehicles from local dealerships.</p>
+                    `
+                ,
+                hashTags: "#Flutter #Dart #CarRecommendation #MobileAppDevelopment #APIIntegration #AppDevelopment #VehicleFinder #UIUXDesign #CrossPlatformDevelopment #TechForCars",
+                gitLink:"Please check out project one",
+                slides:[
+                        { type:'image', source: imagesSrc.buildACar.mainFamilyCar, title: 'Slide 1', description: "1. Main Page Family Car Tab"},
+                        { type: 'image', source: imagesSrc.buildACar.mainSportsCar, title: 'Slide 2', description: "2. Main Page Sports Car Tab"},
+                        { type: 'image', source: flutter_bitcoin3, title: 'Slide 3', description: "3. Sample"},
+
+                ]
+            },
+            {
                 cardTitle:"Quiz App",
                 teamSize:1,
                 objective:"Use an HTTP Request for Authentication and Quiz questions and use different Widgets",
@@ -98,8 +127,7 @@ const projectsData = [
                         { type: 'image', source: flutter_bitcoin2, title: 'Slide 2', description: "2. Sample"},
                         { type: 'image', source: flutter_bitcoin3, title: 'Slide 3', description: "3. Sample"},
                 ]
-            }
-
+            },
         ]
     }
     // Add more subjects with projects here
