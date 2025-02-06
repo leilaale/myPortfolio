@@ -85,7 +85,7 @@ const projectsData = [
                     `
                 ,
                 hashTags: "#Flutter #Dart #CarRecommendation #MobileAppDevelopment #APIIntegration #AppDevelopment #VehicleFinder #UIUXDesign #CrossPlatformDevelopment #TechForCars",
-                gitLink:"Please check out project one",
+                gitLink:"https://github.com/carevilla/Build-A-Car",
                 slides:[
                         { type:'image', source: imagesSrc.buildACar.mainFamilyCar, title: 'Slide 1', description: "1. Main Page Family Car Tab"},
                         { type: 'image', source: imagesSrc.buildACar.mainSportsCar, title: 'Slide 2', description: "2. Main Page Sports Car Tab"},
@@ -100,7 +100,7 @@ const projectsData = [
                 resources:"Web Service",
                 cardDescription:"Created a quiz app using different kinds of Flutter Widgets. App had to do the following: (1) User had to log in through their credentials that were compared by an HTTP request. (2) There would be an alert dialog if credentials couldn't be verified. (3) There had to be a loading widget for any wait times. (4) The user could select amount of questions in the quiz. (5) The questions will be sourced from a collection available at a specified URL. (6) Users can navigate to the previous and next questions. (7) User can end the quiz and see their results. (8) Users can review each question along with their answers.",
                 hashTags:"#Flutter #BackEnd #FrontEnd #Dart #HTTPRequest #Authentication",
-                gitLink:"https://github.com/leilaale/awsLearning/tree/master/weatherChatbot",
+                gitLink:"https://github.com/leilaale/flutter_QuizApp",
                 slides:[
                         { type: 'image', source: flutter_quizApp_logIn, title: 'Slide 1', description: "1. Log In"},
                         { type: 'image', source: flutter_quizApp_logInError, title: 'Slide 2', description: "2. Log In Error"},
@@ -121,7 +121,7 @@ const projectsData = [
                 resources:"Coinbase API",
                 cardDescription:"Created a simple page design that would show the current value of Bitcoin. Main goal was to know how to call an API and showcase that information in the app. ",
                 hashTags:"#Flutter #BackEnd #FrontEnd #Dart #Button",
-                gitLink:"Please check out project one",
+                gitLink:"Null",
                 slides:[
                         { type:'video', source: flutter_bitcoin, title: 'Slide 1', description: "1. Video Demonstration"},
                         { type: 'image', source: flutter_bitcoin2, title: 'Slide 2', description: "2. Sample"},

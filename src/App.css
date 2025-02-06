@@ -23,11 +23,7 @@
 }
 
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 body
 {
@@ -43,12 +39,14 @@ body
 .app_Main{
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .main_Column {
   display: flex;
   flex-direction: column;
 }
+
 
 header
 {
@@ -93,7 +91,6 @@ header ul li a:hover, header ul li a.active {
 
 .me_data{
   background-color: #040D12; /*hsl(348, 27%, 78%)  hsl(0, 2%, 10%)*/
-  
   border-top: 1px solid rgba(28, 214, 239, 0.836);
   border-bottom: 1px solid rgba(28, 214, 239, 0.836);
   width: 300px;
@@ -227,6 +224,70 @@ header ul li a:hover, header ul li a.active {
 .info_scroll::-webkit-scrollbar{
   display: none;
 }
+
+
+@media screen and (max-width: 1024px) {
+  .app_Main {
+    display: flex;
+    flex-direction: column; /* Stack elements */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Ensure it's centered */
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid red;
+  }
+  .me_data {
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1px;
+  }
+
+  .me_data img {
+    width: 100%;
+    max-width: 300px;
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .me_data .title {
+    grid-column: 1;
+  }
+  
+  .me_data .contactInfo {
+    grid-column: 2;
+  }
+
+  .me_data .social-bar {
+    grid-column: 2;
+  }
+
+  .me_data .contactBy {
+    display: none;
+  }
+
+  .main_Column {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+
+  header{
+    display: none;
+  }
+
+  .info_scroll {
+    width: 90%; /* Avoid going out of bounds */
+    max-width: 750px;
+  }
+}
+
+
 
 
 /*------------ About ------------*/
@@ -940,3 +1001,16 @@ input:checked +label .card_Info{
   padding: 10px;
 }
 
+/* Add media queries */
+@media only screen and (min-width: 601px) {
+  . {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
