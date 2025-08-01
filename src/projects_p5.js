@@ -107,7 +107,6 @@ const projectsData = [
                         { type: 'image', source: imagesSrc.buildACar.list, title: 'Slide 18', description: "18. Saved Cars List"},
                         { type: 'image', source: imagesSrc.buildACar.favorites, title: 'Slide 19', description: "19. Favorites List"},
                         { type: 'image', source: imagesSrc.buildACar.delete, title: 'Slide 20', description: "20. Delete From List"},
-
                 ]
             },
             {

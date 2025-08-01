@@ -292,7 +292,7 @@ header ul li a:hover, header ul li a.active {
 
 /*------------ About ------------*/
 #about{
-  padding: 50px 0; /* hsl(0, 2%, 10%)*/ 
+  padding: 30px 0; /* hsl(0, 2%, 10%)*/ 
 }
 .container{
   padding: 10px 10%;
@@ -306,28 +306,93 @@ header ul li a:hover, header ul li a.active {
 .bio{
   flex-basis: 100%;
 }
-.bio h2{
-  font-size: 2em;
-  margin-bottom: 10px;
-  color:whitesmoke;
-}
-.bio p{
-  font-size: 1.2em;
-  color: whitesmoke;
+
+.section-header {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f5f5f7; /* Consistent accent color */
+  border-left: 6px solid rgba(28, 214, 239, 0.836);
+  padding-left: 16px;
+  margin: 20px 0 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
 }
 
+.section-header::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: rgba(28, 214, 239, 0.836);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.bio-p {
+  padding: 1.2em;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.skill-card {
+  background-color: #272838;
+  border-radius: 12px;
+  border: 2px solid #4c5270;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border: 2px solid #04ec59;
+}
+
+.skill-card .icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #e2e4ee;
+}
+
+.skill-card h4 {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
 
 .tab-titles{
   display: flex;
   margin: 20px 0 30px;
 }
+
 .tab-links{
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  color: rgba(238, 239, 237, 0.836) !important;
 }
+
+.tab-links:hover {
+  color: rgba(40, 233, 10, 0.836) !important;
+}
+
 .tab-links::after{
   content: '';
   width: 0;
@@ -344,7 +409,7 @@ header ul li a:hover, header ul li a.active {
 .tab-contents ul li{
   list-style: none;
   margin: 10px 0;
-  color: #f5f6f8;
+  color: #f8f7f5;
   font-size: 14px;
 }
 .tab-contents ul li span {

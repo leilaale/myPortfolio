@@ -13,15 +13,6 @@ const Header = () => {
             <ul>
                 <li>
                     <a 
-                        href="#home" 
-                        className={activeTab === 'home' ? 'active' : ''}
-                        onClick={() => handleTabClick('home')}
-                    >
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a 
                         href="#about" 
                         className={activeTab === 'about' ? 'active' : ''}
                         onClick={() => handleTabClick('about')}
