@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import SkillsTab from "./about_Skills";
-import SoftSkillsTab from "./about_SoftSkills";
-import EducationTab from "./about_Education";
-import CertificationsTab from "./about_Certification";
+import SkillsTab from "./Skills";
+import SoftSkillsTab from "./SoftSkills";
+import CertificationsTab from "./Certifications";
+import EducationTab from "./Education";
+import styles from "./About.module.css";
 
 const AboutMe = () => {
   const [activeTab, setActiveTab] = useState("skills"); // 'skills' is the default active tab
@@ -13,12 +14,12 @@ const AboutMe = () => {
 
   return (
     <div className="slide">
-      <div className="about" id="about">
-        <div className="container">
-          <div className="row">
-            <div className="bio">
-              <h2 className="section-header">About Me</h2>
-              <p className="bio-p">
+      <div className={styles.about} id="about">
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutRow}>
+            <div className={styles.bio}>
+              <h2 className={styles.sectionHeader}>About Me</h2>
+              <p className={styles.bioP}>
                 I recently earned my Master’s in Software Engineering from the
                 University of Texas at El Paso (UTEP), graduating in May 2024. I
                 began this journey in January 2022, completing prerequisites and
@@ -31,34 +32,34 @@ const AboutMe = () => {
                 Now, I’m excited to take the next step—bringing those skills to
                 a team where I can contribute, learn, and grow as a developer.
               </p>
-              <div className="tab-titles">
+              <div className={styles.tabTitles}>
                 <p
-                  className={`tab-links ${
-                    activeTab === "skills" ? "active-link" : ""
+                  className={`${styles.tabLinks} ${
+                    activeTab === "skills" ? styles.activeLink : ""
                   }`}
                   onClick={() => handleTabClick("skills")}
                 >
                   Skills
                 </p>
                 <p
-                  className={`tab-links ${
-                    activeTab === "softSkills" ? "active-link" : ""
+                  className={`${styles.tabLinks} ${
+                    activeTab === "softSkills" ? styles.activeLink : ""
                   }`}
                   onClick={() => handleTabClick("softSkills")}
                 >
                   Soft Skills
                 </p>
                 <p
-                  className={`tab-links ${
-                    activeTab === "education" ? "active-link" : ""
+                  className={`${styles.tabLinks} ${
+                    activeTab === "education" ? styles.activeLink : ""
                   }`}
                   onClick={() => handleTabClick("education")}
                 >
                   Education
                 </p>
                 <p
-                  className={`tab-links ${
-                    activeTab === "certifications" ? "active-link" : ""
+                  className={`${styles.tabLinks} ${
+                    activeTab === "certifications" ? styles.activeLink : ""
                   }`}
                   onClick={() => handleTabClick("certifications")}
                 >
@@ -68,29 +69,29 @@ const AboutMe = () => {
               {/* Render the active tab based on activeTab state */}
 
               <div
-                className={`tab-contents ${
-                  activeTab === "skills" ? "active-tab" : ""
+                className={`${styles.tabContents} ${
+                  activeTab === "skills" ? styles.activeTab : ""
                 }`}
               >
                 <SkillsTab></SkillsTab>
               </div>
               <div
-                className={`tab-contents ${
-                  activeTab === "softSkills" ? "active-tab" : ""
+                className={`${styles.tabContents} ${
+                  activeTab === "softSkills" ? styles.activeTab : ""
                 }`}
               >
                 <SoftSkillsTab></SoftSkillsTab>
               </div>
               <div
-                className={`tab-contents ${
-                  activeTab === "education" ? "active-tab" : ""
+                className={`${styles.tabContents} ${
+                  activeTab === "education" ? styles.activeTab : ""
                 }`}
               >
                 <EducationTab></EducationTab>
               </div>
               <div
-                className={`tab-contents ${
-                  activeTab === "certifications" ? "active-tab" : ""
+                className={`${styles.tabContents} ${
+                  activeTab === "certifications" ? styles.activeTab : ""
                 }`}
               >
                 <CertificationsTab></CertificationsTab>

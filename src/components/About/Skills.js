@@ -5,27 +5,22 @@ import {
   FaReact,
   FaHtml5,
   FaCss3Alt,
-  FaNodeJs,
   FaGitAlt,
   FaGithub,
-  FaDatabase,
   FaMobileAlt,
   FaGlobe,
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiFirebase,
-  SiPostgresql,
   SiMysql,
   SiFlutter,
   SiDart,
   SiMongodb,
-  SiTailwindcss,
   SiFigma,
-  SiRedux,
-  SiExpress,
-  SiTypescript,
 } from "react-icons/si";
+
+import styles from "./About.module.css";
 
 const SkillsTab = () => {
   const skills = [
@@ -48,10 +43,10 @@ const SkillsTab = () => {
   ];
 
   return (
-    <div className="skills-list">
+    <div className={styles.skillsList}>
       {skills.map((skill, index) => (
-        <div className="skill-card" key={index}>
-          <div className="icon">{skill.icon}</div>
+        <div className={styles.skillCard} key={index}>
+          <div className={styles.icon}>{skill.icon}</div>
           <h5>{skill.name}</h5>
         </div>
       ))}
